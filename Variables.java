@@ -3,10 +3,10 @@ public class Variables {
     int edad = 25;
     double altura = 1.75;
     String nombre = " Juan Triviño ";
-    boolean estudiante = true ;
+    boolean esEsstudiante = true ;
     System . out . println (" Nombre : " + nombre + ", Edad : "
     + edad + ",  Altura : " + altura + ",  Estudiante : "
-    + estudiante ) ;
+    + esEsstudiante ) ;
     }
     }
     
