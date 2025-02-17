@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Ejercicio1 {
 
     /**
-     * @param args
+    Se tiene un arreglo lineal de N números. Hallar la suma de los N números (N es
+ingresado por el usuario) 
      */
     public static void main(String[] args) {
 
