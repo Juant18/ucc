@@ -14,5 +14,18 @@ int[] a = { 8, 3, 10, 22, 1, 9};
 
 
   }
-    }
+System.out.println("-------------------------------");
+ int tamaño=10;
+  int[] b = new int[tamaño];
+  //estructura para llenar el arreglo, con numeros aleatorios 
+  //entre 10 y 30
+for(int i = 0; i< b.length;i++){
+b[i]= (int)  (Math.random()  *( 30 + 10)) - 10;
+
+
+
+//mostrar los elementos del arreglo
+System.out.println("b["+ i +"]=" +b[i]);
+}
+}
 }
