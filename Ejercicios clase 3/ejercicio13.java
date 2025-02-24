@@ -1,7 +1,7 @@
 import java.util.ArrayList; 
 import java.util.Arrays; 
 
-public class SepararNumeros {
+public class ejercicio13 {
 
     public static void main(String[] args) {
      
