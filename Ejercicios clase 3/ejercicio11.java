@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class SepararNumeros {
+public class ejercicio11 {
 
     public static void main(String[] args) {
         int[] arregloA = {1, -2, 0, 5, -8, 0, 3, -1, 7}; 
