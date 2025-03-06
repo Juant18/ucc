@@ -37,7 +37,7 @@ public class ActividadEvaluativa1 {
                         int lugarEstacionamiento = leer.nextInt();
 
                         if (lugarEstacionamiento >= 1 && lugarEstacionamiento <= capacidadMaxima) {
-                            if (!lugaresOcupados[lugarEstacionamiento - 1]) {
+                            if (lugaresOcupados[lugarEstacionamiento - 1]) {
                                 lugaresOcupados[lugarEstacionamiento - 1] = true;
                                 placas[contadorMotos] = placaMoto;
                                 contadorMotos++;
