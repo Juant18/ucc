@@ -32,16 +32,17 @@ public class ActividadEvaluativa1 {
                     if (contadorMotos < capacidadMaxima) {
                         System.out.println("Dime el número de la placa de tu moto");
                         String placaMoto = leer.nextLine();
-                        placas[contadorMotos] = placaMoto;
 
                         System.out.println("Dime en el lugar que vas a estacionar del 1 al " + capacidadMaxima);
                         int lugarEstacionamiento = leer.nextInt();
 
                         if (lugarEstacionamiento >= 1 && lugarEstacionamiento <= capacidadMaxima) {
-                            if (lugaresOcupados[lugarEstacionamiento - 1]) {
+                            if (!lugaresOcupados[lugarEstacionamiento - 1]) {
                                 lugaresOcupados[lugarEstacionamiento - 1] = true;
+                                placas[contadorMotos] = placaMoto;
                                 contadorMotos++;
-                                System.out.println("Moto parqueada en el lugar " + lugarEstacionamiento + ". Total motos: " + contadorMotos);
+                                System.out.println("Moto parqueada en el lugar " + lugarEstacionamiento
+                                        + ". Total motos: " + contadorMotos);
                             } else {
                                 System.out.println("El lugar " + lugarEstacionamiento + " ya está ocupado.");
                             }
