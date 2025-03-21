@@ -28,28 +28,28 @@ public class Calculadora {
     public void Texto(String calculadora) {
         System.out.println("Bienvenido a la calculadora");
     }
-    public void realizarOperacion(int operacion){
- if(operacion==1){
-    resultado=num1+num2;
- }else{
-    if(operacion==2){
-        resultado=num1-num2;
-    }else{
-if(operacion==3){
-resultado=num1*num2;
-}else{
-    if(operacion==4){
-        resultado=num1/num2;
-    }
-    if (num2 != 0) {
-        resultado = num1 / num2;
-    } else {
-        System.out.println("Error: División por 0 no permitida.");
-    }
-}
-}
- }
- 
+
+    public void realizarOperacion(int operacion) {
+        if (operacion == 1) {
+            resultado = num1 + num2;
+        } else {
+            if (operacion == 2) {
+                resultado = num1 - num2;
+            } else {
+                if (operacion == 3) {
+                    resultado = num1 * num2;
+                } else {
+                    if (operacion == 4) {
+                        resultado = num1 / num2;
+                    }
+                    if (num2 != 0) {
+                        resultado = num1 / num2;
+                    } else {
+                        System.out.println("Error: División por 0 no permitida.");
+                    }
+                }
+            }
+        }
 
     }
 
@@ -59,7 +59,6 @@ resultado=num1*num2;
         Calculadora calculadora = new Calculadora();
 
         boolean aceptar = true;
-        
 
         while (aceptar) {
 
@@ -68,11 +67,10 @@ resultado=num1*num2;
             System.out.println("Seleccione 3 para multiplicacion");
             System.out.println("Seleccione 4 para division");
             System.out.println("Seleccione 5 para Salir");
-       
+
             opcion = leer.nextInt();
             leer.nextLine();
 
-      
             if (opcion == 5) {
                 aceptar = false;
                 System.out.println("¡Hasta luego!");
@@ -89,11 +87,8 @@ resultado=num1*num2;
             calculadora.realizarOperacion(opcion);
             System.out.println("Resultado: " + calculadora.getResultado());
         }
-             
+
         leer.close();
-            }
-        
-
     }
-    
 
+}
