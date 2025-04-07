@@ -36,9 +36,9 @@ public class Equipaje {
     private double TAMAÑO = 4.5;
     private double PRECIO_BASE = 1000.0;
   
-    protected double peso;
-    protected double tamaño;
-    protected double precioBase;
+    private double peso;
+    private double tamaño;
+    private double precioBase;
 
     public Equipaje(double peso, double tamaño) {
         this.peso = peso;
@@ -65,7 +65,7 @@ public class Equipaje {
 }
 
 class Bodega extends Equipaje {
-    private static final double CAPACIDAD = 5.0;
+    private static final double CAPACIDAD = 8.0;
 
     public Bodega(double peso, double tamaño) {
         super(peso, tamaño);
@@ -102,19 +102,5 @@ class Cabina extends Equipaje {
 
     public double calcularPrecio() {
         return precioBase + (peso * tamaño * TIEMPO);
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Equipaje[] equipajes = new Equipaje[5];
-        equipajes[0] = new Bodega(100.0, 10.0);
-        equipajes[1] = new Bodega(200);
-        equipajes[2] = new Cabina(150, 20.0);
-        equipajes[3] = new Cabina();
-        equipajes[4] = new Bodega();
-
-        PrecioTotal solucion = new PrecioTotal(equipajes);
-        solucion.mostrarTotales();
     }
 }
