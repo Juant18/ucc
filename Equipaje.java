@@ -41,8 +41,8 @@ public class Equipaje {
     private double precioBase;
 
     public Equipaje(double peso, double tamaño) {
-        this.peso = peso;
-        this.tamaño = tamaño;
+        this.peso = PESO;
+        this.tamaño = TAMAÑO;
         this.precioBase = PRECIO_BASE;
     }
 
