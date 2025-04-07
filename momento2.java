@@ -1,9 +1,9 @@
 
-   public class Equipaje {
+public class Equipaje {
     // Constantes
-    private  double PESO = 10.0;
-    private  double TAMAÑO = 4.5;
-    private  double PRECIO_BASE = 1000.0;
+    private double PESO = 10.0;
+    private double TAMAÑO = 4.5;
+    private double PRECIO_BASE = 1000.0;
     // Atributos
     private double peso;
     private double tamaño;
@@ -48,7 +48,6 @@ class Bodega extends Equipaje {
         super();
     }
 
-   
     public double calcularPrecio() {
         return precioBase + (peso * tamaño * CAPACIDAD);
     }
@@ -70,12 +69,10 @@ class Cabina extends Equipaje {
         super();
     }
 
- 
     public double calcularPrecio() {
         return precioBase + (peso * tamaño * TIEMPO);
     }
 }
-
 
 class PrecioTotal {
     private double totalPrecios = 0.0;
@@ -109,17 +106,3 @@ class PrecioTotal {
     }
 }
 
-// Clase principal para ejecutar el programa
-public class Main {
-    public static void main(String[] args) {
-        Equipaje[] equipajes = new Equipaje[5];
-        equipajes[0] = new Bodega(100.0, 10.0);
-        equipajes[1] = new Bodega(200);
-        equipajes[2] = new Cabina(150, 20.0);
-        equipajes[3] = new Cabina();
-        equipajes[4] = new Bodega();
-
-        PrecioTotal solucion = new PrecioTotal (equipajes);
-        solucion.mostrarTotales();
-    }
-}
