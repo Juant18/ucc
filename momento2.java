@@ -1,9 +1,9 @@
 
    public class Equipaje {
     // Constantes
-    private static final double PESO = 10.0;
-    private static final double TAMAÑO = 4.5;
-    private static final double PRECIO_BASE = 1000.0;
+    private  double PESO = 10.0;
+    private  double TAMAÑO = 4.5;
+    private  double PRECIO_BASE = 1000.0;
     // Atributos
     private double peso;
     private double tamaño;
