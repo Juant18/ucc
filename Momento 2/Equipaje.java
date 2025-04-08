@@ -1,13 +1,12 @@
-
-public class Equipaje {
-    // Constantes
-    private double PESO = 10.0;
-    private double TAMAÑO = 4.5;
-    private double PRECIO_BASE = 1000.0;
-    // Atributos
-    private double peso;
-    private double tamaño;
-    private double precioBase;
+public  class Equipaje {
+   
+    private static  double PESO = 10.0;
+    private static  double TAMAÑO = 4.5;
+    private static  double PRECIO_BASE = 1000.0;
+    
+    public double peso;
+    public double tamaño;
+    public double precioBase;
 
     public Equipaje(double peso, double tamaño) {
         this.peso = peso;
@@ -21,20 +20,20 @@ public class Equipaje {
         this.precioBase = precioBase;
     }
 
-    // Constructor por defecto
+   
     public Equipaje() {
         this.peso = PESO;
         this.tamaño = TAMAÑO;
         this.precioBase = PRECIO_BASE;
     }
 
-    // Método abstracto para calcular el precio
-    public abstract double calcularPrecio();
+   
+    public  double calcularPrecio();
 }
 
-// Clase Bodega que extiende de Equipaje
+
 class Bodega extends Equipaje {
-    private static final double CAPACIDAD = 5.0;
+    private static  double CAPACIDAD = 8.0;
 
     public Bodega(double peso, double tamaño) {
         super(peso, tamaño);
@@ -48,14 +47,15 @@ class Bodega extends Equipaje {
         super();
     }
 
+ 
     public double calcularPrecio() {
         return precioBase + (peso * tamaño * CAPACIDAD);
     }
 }
 
-// Clase Cabina que extiende de Equipaje
+
 class Cabina extends Equipaje {
-    private static final double TIEMPO = 2.0;
+    private static  double TIEMPO = 2.0;
 
     public Cabina(double peso, double tamaño) {
         super(peso, tamaño);
@@ -69,10 +69,12 @@ class Cabina extends Equipaje {
         super();
     }
 
+ 
     public double calcularPrecio() {
         return precioBase + (peso * tamaño * TIEMPO);
     }
 }
+
 
 class PrecioTotal {
     private double totalPrecios = 0.0;
@@ -98,11 +100,10 @@ class PrecioTotal {
     }
 
     public void mostrarTotales() {
-        // Calculo de totales
+        
         calcularTotales();
         System.out.println("Total Equipaje: " + totalPrecios);
         System.out.println("Total Bodega: " + totalBodega);
         System.out.println("Total Cabina: " + totalCabina);
     }
 }
-
