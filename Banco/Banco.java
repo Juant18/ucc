@@ -16,5 +16,11 @@ public class Banco {
         System.out.println(cliente);
     }
 
+    public String toString(){
+        return "Banco {id:" + id + ", nombre:" + nombre + ", Cuenta[" + cuenta + "]}";
+    }
+
+
     
-}
+    }
+
