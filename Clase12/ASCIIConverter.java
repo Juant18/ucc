@@ -1,23 +1,23 @@
 public class ASCIIConverter extends converter{
 
-private String ruta;
+private String rutaArchivo;
 
 public ASCIIConverter(String document,String ruta){
     super(document);
-    this.ruta=ruta;
+    this.rutaArchivo=rutaArchivo;
    
 }
 
 
 public void makeLine(){
-    System.out.println("make line ASCIIConverter");
+    System.out.println("make line ASCII");
 }
 public void makeParagraf(){
-    System.out.println("make paragraf ASCIIConverte");
+    System.out.println("make paragraf ASCII");
 
 }
 public void makeTable(){
-    System.out.println("make table ASCIIConverte");
+    System.out.println("make table ASCII");
 }
  
    
