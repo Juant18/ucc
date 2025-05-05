@@ -1,6 +1,6 @@
 public class postScrípconverter extends converter {
     private  String rutaArchivo;
-    public postScrípconverter(String document,String ruta){
+    public postScrípconverter(String document,String rutaArchivo){
         super(document);
         this.rutaArchivo = rutaArchivo;
        

@@ -1,6 +1,6 @@
 public class PDFConverter extends converter {
     private  String rutaArchivo;
-    public PDFConverter(String document,String ruta){
+    public PDFConverter(String document,String rutaArchivo){
         super(document);
         this.rutaArchivo = rutaArchivo;
        

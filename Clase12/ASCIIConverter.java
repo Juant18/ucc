@@ -2,7 +2,7 @@ public class ASCIIConverter extends converter{
 
 private String rutaArchivo;
 
-public ASCIIConverter(String document,String ruta){
+public ASCIIConverter(String document,String rutaArchivo){
     super(document);
     this.rutaArchivo = rutaArchivo;
    
