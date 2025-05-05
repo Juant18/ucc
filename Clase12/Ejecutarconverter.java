@@ -5,7 +5,8 @@ public class Ejecutarconverter {
         converter objPdf = new PDFConverter("libro","c: libros");
 
 
-        Reader objlector = new Reader("line",objPdf);
-        System.out.println(objlector.parseinput());
+        Reader objlector1 = new Reader("line",objPdf);
+        objlector1.parseinput();
+       
     }
 }
