@@ -6,7 +6,10 @@ public class Ejecutarconverter {
 
 
         Reader objlector1 = new Reader("line",objPdf);
+        Reader objlector2 = new Reader("paragraf",objASCII);
+        Reader objlector3 = new Reader("PDF",objpostScript);
         objlector1.parseinput();
-       
+        objlector2.parseinput();
+        objlector3.parseinput();
     }
 }
