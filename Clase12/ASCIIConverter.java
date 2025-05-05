@@ -4,7 +4,7 @@ private String rutaArchivo;
 
 public ASCIIConverter(String document,String ruta){
     super(document);
-    this.rutaArchivo=rutaArchivo;
+    this.rutaArchivo = rutaArchivo;
    
 }
 
