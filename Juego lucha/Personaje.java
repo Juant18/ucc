@@ -2,7 +2,7 @@ import java.util.Random;
 
 
 // Clase base Personaje
-abstract class Personaje {
+ class Personaje {
     protected String nombre;
     protected int puntosDeVida;
     private final int MAX_DANO = 30;
