@@ -3,8 +3,8 @@ import java.util.Random;
 
 // Clase base Personaje
  class Personaje {
-    protected String nombre;
-    protected int puntosDeVida;
+    private String nombre;
+    private int puntosDeVida;
     private final int MAX_DANO = 30;
     private final int MIN_DANO = 10;
 
