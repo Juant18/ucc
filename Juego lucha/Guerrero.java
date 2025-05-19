@@ -1,4 +1,4 @@
-
+import java.util.Random;  
 class Guerrero extends Personaje {
     private Random rand = new Random();
 

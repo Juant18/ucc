@@ -1,3 +1,4 @@
+import java.util.Random;  
 class Mago extends Personaje {
     private Random rand = new Random();
 
