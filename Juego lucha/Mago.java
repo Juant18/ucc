@@ -18,7 +18,6 @@ class Mago extends Personaje {
         System.out.println(this.getNombre() + " conjura un ¡Rayo Arcano! impactando a " + oponente.getNombre() + " con " + daño + " puntos de daño mágico.");
     }
 
-    @Override
     public void atacar(Personaje oponente) {
         // El Mago tiene un 50% de usar bola de fuego y 50% de usar rayo arcano
         if (rand.nextDouble() < 0.5) {
